@@ -48,4 +48,13 @@ sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 ## Verify that Docker Engine - Community is installed correctly
 sudo docker run hello-world
 
+### Install Docker Compose
+echo -e "${YELLOW}------ Install Docker Compose ------${NC}"
+
+## cURL docker compose from Github
+sudo curl -fsSL "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+## Apply executable permissions to the binary
+sudo chmod +x /usr/local/bin/docker-compose
+
 echo -e "${YELLOW}------ Completed Core Script ------${NC}"
