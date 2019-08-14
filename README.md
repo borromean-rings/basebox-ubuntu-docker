@@ -8,7 +8,7 @@ The repository provides a basic ubuntu vagrant box with clean docker setup to se
 
 ## VM contents
 
-- Ubuntu (18.04 LTS) with updated/upgraded packages
+- Ubuntu (64 bit 18.04 LTS) with updated/upgraded packages
 - Docker
 
 ## Recommendations
