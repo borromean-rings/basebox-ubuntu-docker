@@ -57,4 +57,12 @@ sudo curl -fsSL "https://github.com/docker/compose/releases/download/1.24.1/dock
 ## Apply executable permissions to the binary
 sudo chmod +x /usr/local/bin/docker-compose
 
+### Post-install steps: https://docs.docker.com/install/linux/linux-postinstall/
+
+## Add user vagrant (the default user after login) to docker group
+sudo usermod -aG docker vagrant
+
+## Enable docker as a (systemd) service
+sudo systemctl enable docker
+
 echo -e "${YELLOW}------ Completed Core Script ------${NC}"
